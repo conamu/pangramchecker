@@ -1,8 +1,10 @@
+const { join } = require("path");
 
 //Prepare all needed DOM objects in constants
 const inputSentence = document.getElementById('pangraminput');
 const pangramoutput = document.getElementById('pangramid');
 const uniqueoutput = document.getElementById('uchars');
+const missingoutput = document.getElementById('mchars');
 
 // Function that checks the sentence.
 var checkPangram = () => {
@@ -122,6 +124,25 @@ var checkPangram = () => {
 
         // If nothing is true, display that the sentence is not a Pangram.
         pangramoutput.innerHTML = "No pangram in sight here..."
+    }
+
+    //Join the Array of missing characters into a string.
+    
+    var missingsentence;
+    var smissing = true;
+    
+    if (missing.length == 1) {
+        missingsentence = missing[0];
+    } else
+    if (missing.length == 0) {
+        smissing = false;
+    } else {
+        missingsentence = missing.join(', ')
+    }
+
+    //Display the missing Characters
+    if (smissing == true) {
+        missingoutput.innerHTML = "The characters " + missingsentence + " are missing."
     }
 
     //Display the number of unique characters
