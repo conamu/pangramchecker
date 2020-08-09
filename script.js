@@ -7,14 +7,14 @@ const uniqueoutput = document.getElementById('uchars');
 // Function that checks the sentence.
 var checkPangram = () => {
 
-    // Variable to store the ammount of characters present for real Pangram and basic Pangram.
+    // Variable to store the ammount of characters present for real pangram and basic pangram.
     var notRealChars = 0;
     var realChars = 0;
 
-    //Boolean to check for Pangram
+    //Boolean to check for pangram
     var pangram = false;
 
-    //Boolean to check for real Pangram
+    //Boolean to check for real pangram
     var realPangram = false;
 
     // Reset sentence variable for consecutive runs.
@@ -90,14 +90,14 @@ var checkPangram = () => {
 
     /* Check whether the sum of unique characters and unique multiple characters equals the length of the alphabet.
         If we pass this check, set the pangram variable to true.
-        We just detected a Pangram! */
+        We just detected a pangram! */
     if (realChars + notRealChars === basicAlphabet.length) {
         pangram = true;
     }
 
     /* If the unique onetime characters equal the length of the alphabet,
         set the realPangram variable to true.
-        Now we have detected a perfect Pangram! */
+        Now we have detected a perfect pangram! */
     if (realChars === basicAlphabet.length) {
         realPangram = true;
     }
@@ -112,20 +112,20 @@ var checkPangram = () => {
 
     // If pangram and realpangram variables are true, display that it is a perfect pangram.
     if (pangram == true && realPangram == true) {
-        pangramoutput.innerHTML = "Your Sentence is a Perfect Pangram!"
+        pangramoutput.innerHTML = "Your sentence is a perfect pangram!"
     } else
 
     // If only the pangram variable is true, display that the sentence is a normal pangram.
     if (pangram == true) {
-        pangramoutput.innerHTML = "Your Sentence is just a normal Pangram."
+        pangramoutput.innerHTML = "Your sentence is just a normal pangram."
     } else {
 
         // If nothing is true, display that the sentence is not a Pangram.
-        pangramoutput.innerHTML = "No Pangram in sight here..."
+        pangramoutput.innerHTML = "No pangram in sight here..."
     }
 
     //Display the number of unique characters
-    uniqueoutput.innerHTML = "There are " + (realChars + notRealChars) + " unique Characters in your sentence.";
+    uniqueoutput.innerHTML = "There are " + (realChars + notRealChars) + " unique characters in your sentence.";
 
 }
 
