@@ -1,29 +1,29 @@
 
-//Prepare all needed DOM Objects in constants
+//Prepare all needed DOM objects in constants
 const inputSentence = document.getElementById('pangraminput');
 const pangramoutput = document.getElementById('pangramid');
 const uniqueoutput = document.getElementById('uchars');
 
-// Function, that checks the sentence.
+// Function that checks the sentence.
 var checkPangram = () => {
 
-    // Variable to Store the ammount of Characters Present for Real Pngram and basic Pangram.
+    // Variable to store the ammount of characters present for real Pangram and basic Pangram.
     var notRealChars = 0;
     var realChars = 0;
 
-    //Boolean to Check for Pangram
+    //Boolean to check for Pangram
     var pangram = false;
 
-    //Boolean to Check for Real Pangram
+    //Boolean to check for real Pangram
     var realPangram = false;
 
-    // Reset sentence Variable for consecutive runs.
+    // Reset sentence variable for consecutive runs.
     sentence = null;
 
-    // Array for missing Characters
+    // Array for missing characters
     var missing = [];
 
-    // The Alphabet in an Array with the count of how often the Character is in the sentence.
+    // The Alphabet in an array with the count of how often the character is in the sentence.
     var basicAlphabet = [{char:"a", count:0},
                         {char:"b", count:0},
                         {char:"c", count:0}, 
@@ -51,18 +51,18 @@ var checkPangram = () => {
                         {char:"y", count:0},
                         {char:"z", count:0},]
 
-    // Get the Value of the text input and make it all lower case.
+    // Get the value of the text input and make it all lower case.
     var sentence = inputSentence.value;
     sentence = sentence.toLowerCase();
 
     // Debug
     console.log(sentence);
 
-    // Check on every Character of the Sentence.
+    // Check on every character of the sentence.
     for (var i = 0; i < sentence.length; i++) {
 
-        /* Check the Character at the current index position in the sentence against the alphabet array,
-            if it matches a character, encrease the count of that character by 1 */
+        /* Check the character at the current index position in the sentence against the alphabet array,
+            if it matches a character, encrease the count of that character by 1. then exit the statement */
         for (var x = 0; x < basicAlphabet.length; x++) {
             if (sentence.charAt(i) === basicAlphabet[x].char) {
                 basicAlphabet[x].count ++;
@@ -82,22 +82,22 @@ var checkPangram = () => {
             notRealChars ++;
         } else 
 
-        // If the Character at this index position has a count of 0 or below, it gets pushed to the missing characters array.
+        // If the character at this index position has a count of 0 or below, it gets pushed to the missing characters array.
         if (basicAlphabet[y].count <= 0) {
             missing.push(basicAlphabet[y].char);
         }
     }    
 
-    /* Check, whether the sum of Unique Characters and Unique multiple characters equals the length of the Alphabet.
+    /* Check whether the sum of unique characters and unique multiple characters equals the length of the alphabet.
         If we pass this check, set the pangram variable to true.
         We just detected a Pangram! */
     if (realChars + notRealChars === basicAlphabet.length) {
         pangram = true;
     }
 
-    /* If the Unique, Onetime Characters equal the length of the Alphabet,
+    /* If the unique onetime characters equal the length of the alphabet,
         set the realPangram variable to true.
-        Now we have detected a Real Pangram! */
+        Now we have detected a perfect Pangram! */
     if (realChars === basicAlphabet.length) {
         realPangram = true;
     }
@@ -110,12 +110,12 @@ var checkPangram = () => {
     basicAlphabet.forEach(p => console.log(p));
     missing.forEach(g => console.log(g));
 
-    // If pangram and realpangram variables are true, display that it is a Perfect pangram.
+    // If pangram and realpangram variables are true, display that it is a perfect pangram.
     if (pangram == true && realPangram == true) {
         pangramoutput.innerHTML = "Your Sentence is a Perfect Pangram!"
     } else
 
-    // If only the pangram Variable is true, display that the sentence is a normal pangram.
+    // If only the pangram variable is true, display that the sentence is a normal pangram.
     if (pangram == true) {
         pangramoutput.innerHTML = "Your Sentence is just a normal Pangram."
     } else {
@@ -124,10 +124,10 @@ var checkPangram = () => {
         pangramoutput.innerHTML = "No Pangram in sight here..."
     }
 
-    //Display the Number of unique Characters
+    //Display the number of unique characters
     uniqueoutput.innerHTML = "There are " + (realChars + notRealChars) + " unique Characters in your sentence.";
 
 }
 
-// Add the EventHandler for the ButtonClick Event after the script is read.
+// Add the EventHandler for the ButtonClick event after the script is read.
 document.getElementById('checkbtn').addEventListener("click", checkPangram);
