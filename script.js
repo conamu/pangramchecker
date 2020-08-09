@@ -1,5 +1,3 @@
-const { join } = require("path");
-
 //Prepare all needed DOM objects in constants
 const inputSentence = document.getElementById('pangraminput');
 const pangramoutput = document.getElementById('pangramid');
@@ -141,8 +139,12 @@ var checkPangram = () => {
     }
 
     //Display the missing Characters
-    if (smissing == true) {
-        missingoutput.innerHTML = "The characters " + missingsentence + " are missing."
+
+    if (smissing == true && missing.length >= 2) {
+        missingoutput.innerHTML = "Characters missing: " + missingsentence
+    } else
+    if (smissing == true && missing.length == 1) {
+        missingoutput.innerHTML = "Character missing: " + missingsentence
     }
 
     //Display the number of unique characters
