@@ -1,0 +1,22 @@
+#headline {
+    padding-left: 20rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.con {
+    padding-top: 8rem;
+}
+
+body {
+    background: #FFFF7F;
+}
+
+.tablestuff {
+    padding-top: 3rem;
+}
+
+.labelurl {
+    font-family: 'Anton', sans-serif;
+}
