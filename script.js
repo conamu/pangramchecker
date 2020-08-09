@@ -43,7 +43,7 @@ const input = document.getElementById("pangraminput");
 
 // Function on Button Press.
 
-var checkFunction = () => {
+function checkPangram() {
     // Set Vars for this Function run.
     var inputSentence = input.value;
 
