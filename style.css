@@ -20,3 +20,9 @@ body {
 .labelurl {
     font-family: 'Anton', sans-serif;
 }
+
+.smalltext{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    padding-top: 5rem;
+}

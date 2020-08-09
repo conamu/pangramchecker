@@ -24,46 +24,45 @@
 
   <body>
 
-    
         <div class="container con">
+
             <h1 id="headline">Welcome to Pangramchecker! </br>
                 <div style="font-size: small;">
                     by conamu
                 </div></h1>
+
             <form>
                 <div>
-                    <label class="labelurl" for="pangraminput">Please enter a Sentence to check, maybe its a Pangram!.</label>
-                    <input placeholder="My Cat is Cool." id="pangraminput" type="text" class="form-control">
-                    <button onclick="checkPangram();" id="checkbtn" type="button" style="font-size: 2rem; margin-top: 0.75rem;" class="btn btn-outline-warning btn-block">Check it!</button>
+                    <label class="labelurl" for="pangraminput">Please enter a Sentence to check, maybe its a Pangram!</label>
+
+                    <input placeholder="f.e.: Mr. Jock, TV quiz PhD., bags few lynx." id="pangraminput" type="text" class="form-control">
+
+                    <button 
+                    id="checkbtn" type="button" style="font-size: 2rem; margin-top: 0.75rem;" class="btn btn-outline-warning btn-block"
+                    >Check it!</button>
+
                 </div>
             </form>
 
-            
+            <div>
+                <h3 id=pangramid class="smalltext" ></h3>
+                <h3 id=uchars class="smalltext"></h3>
+                <h4 style="color:coral" class="smalltext">What is a Pangram? 
+                    <br>A Pangram is a Sentence or Collection of Words with every Character of the Alphabet in it at least once.
+                    <br>A Pangram where every Character exists exactly once is known as a Perfect Pangram.</h4>
+            </div>
 
         </div>
 
-
-   
     
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+        <!-- Own JavaScript -->
+        <script src="script.js"></script>
+    </body>
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Own JavaScript -->
-    <script src="script.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-  </body>
 
 
 </html>
