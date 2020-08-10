@@ -19,9 +19,9 @@
 
 ## Want to run it as a Docker container?
 ### You can!
-### First, install Docker:
+### First, install Docker
 ### On Windows:
-#### Follow [this link](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and download the executable file to install docker on your machine.
+#### Follow [this link](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and download the executable file to install Docker on your machine.
 ### On Ubuntu:
 #### Run:
 ```
