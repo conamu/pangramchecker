@@ -10,7 +10,8 @@
 #### Clone this repository into any directory on your PC where you will find it.
 #### I suggest the Desktop f.e..
 #### If you don't have Git installed or don't know what cloning is, you can also  just download the zipfile and unpack it.
-#### If you have Git installed, use `git clone https://github.com/conamu/pangramchecker.git`
+#### If you have Git installed, use: 
+`git clone https://github.com/conamu/pangramchecker.git`
 
 #### After cloning/downloading the files, just double click the index.html file.
 #### If the browser doesnt open your file directly, try opening it like this:
@@ -22,7 +23,7 @@
 ### On Windows:
 #### Follow [this link](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and download the executable file to install docker on your machine.
 ### On Ubuntu:
-#### Run 
+#### Run:
 ```
 sudo apt-get update
 sudo apt-get install docker.io -y
