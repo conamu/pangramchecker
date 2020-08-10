@@ -1,7 +1,7 @@
 # Pangramchecker
 
 ## What is this project about?
-#### The Pangramchecker projects, as it's name states, checks a given sentence input by the user for pangrams.
+#### The Pangramchecker project, as it's name states, checks a given sentence input by the user for pangrams.
 #### If it detects, that every character of the alphabet is in the sentence atleast once, it is a Pangram!
 #### But if it even detects that every character of the alphabet is in the sentence exactly one time, we have a perfect pangram, which is even better!
 
