@@ -23,6 +23,9 @@ var checkPangram = () => {
     // Array for missing characters
     var missing = [];
 
+    // Reset missingoutput for next run
+    missingoutput.innerHTML = "";
+
     // The Alphabet in an array with the count of how often the character is in the sentence.
     var basicAlphabet = [{char:"a", count:0},
                         {char:"b", count:0},

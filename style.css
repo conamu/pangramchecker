@@ -6,7 +6,7 @@
 }
 
 .con {
-    padding-top: 8rem;
+    padding-top: 4rem;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
 
 .labelurl {
     font-family: 'Anton', sans-serif;
+    font-size: x-large;
 }
 
 .smalltext{
