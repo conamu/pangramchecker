@@ -30,3 +30,6 @@ sudo apt-get install docker.io -y
 #### Now you are ready to start up the container!
 #### Just run:
 `docker run -d -p 80:80 --name pangramchecker --restart always conamu470/pangramchecker:latest`
+
+#### Now you should be able to type "localhost" into your browser adddress bar.
+#### Keep in mind: If you don't run the container on your local machine, you have to use the ip address of the machine it is running on.
