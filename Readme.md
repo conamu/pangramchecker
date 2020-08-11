@@ -5,6 +5,8 @@
 #### If it detects, that every character of the alphabet is in the sentence at least once, it is a pangram!
 #### But if it even detects that every character of the alphabet is in the sentence exactly one time, we have a perfect pangram, which is even better!
 
+### Look at the [demo](http://projects.diamond-excellence.org/pangramchecker/index.html) of this project.
+
 ## Simple install instructions
 
 #### Clone this repository into any directory on your PC where you will find it.
@@ -30,7 +32,7 @@ sudo apt-get install docker.io -y
 ```
 #### Now you are ready to start up the container!
 #### Just run:
-`docker run -d -p 80:80 --name pangramchecker --restart always conamu470/pangramchecker:latest`
+`docker run -d -p 80:80 --name pangramchecker conamu470/pangramchecker:latest`
 
 #### Now you should be able to type "localhost" into your browser address bar.
 #### Keep in mind: If you don't run the container on your local machine, you have to use the ip address of the machine it is running on.
